@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+    - echo "Entered the pre-build phase"
+  build:
+    commands:
+    - echo "Entered the build phase"
+    - mvn clean package
+    
+  post_build:
+    commands:  
+    - echo "Entered the post-build phase"
+    - mv target/deploy ./
+artifacts:
+  files:
+  - target/springboot-aws-cicd-demo-0.0.1-SNAPSHOT.war
+  
