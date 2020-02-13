@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: demo.jar
-    destination: /home/ec2-user/    
+    destination: ./    
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
