@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "from start server"
-java -jar demo.jar
+java -jar demo.jar &
