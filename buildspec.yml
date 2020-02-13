@@ -11,7 +11,10 @@ phases:
   post_build:
     commands:  
     - echo "Entered the post-build phase"
+    - mv target/springboot-aws-cicd-demo-0.0.1-SNAPSHOT.war ./
+    - mv scripts/**/* ./
+    - mv appspec.yml ./
 artifacts:
   files:
-  - target/**/*
+  - ./**/*
   
