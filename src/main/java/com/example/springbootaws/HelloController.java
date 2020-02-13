@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@RequestMapping("/hello/{name}")
     public String helloDocker(@PathVariable(value = "name") String name) {
-        String response = "Welcome::: " + name + " Response received on : " + new Date();
+        String response = "Welcome::: " + name + "\nResponse received on : " + new Date();
         System.out.println(response);
         return response;
  

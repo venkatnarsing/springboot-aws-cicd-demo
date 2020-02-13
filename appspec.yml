@@ -2,7 +2,7 @@
 version: 0.0
 os: linux
 files:
-  - source: springboot-aws-cicd-demo-0.0.1-SNAPSHOT.war
+  - source: demo.jar
     destination: ./    
 hooks:
   BeforeInstall:
