@@ -13,5 +13,5 @@ phases:
     - echo "Entered the post-build phase"
 artifacts:
   files:
-  - target/springboot-aws-cicd-demo-0.0.1-SNAPSHOT.war
+  - target/**/*
   
